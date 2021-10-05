@@ -1,0 +1,42 @@
+[
+    {
+        "question": "Qual é uma das principais características dos Poríferos?",
+        "answer": "Presença de poros",
+        "alternative": "Presença de tecidos e órgãos"
+    },
+    {
+        "question": "Qual país tem um formato de uma bota?",
+        "answer": "Itália",
+        "alternative": "Brasil"
+    },
+    {
+        "question": "Qual é o peixe mais lento do mundo?",
+        "answer": "Cavalo-Marinho",
+        "alternative": "Baleia"
+    },
+    {
+        "question": "Qual é o maior órgão do corpo humano?",
+        "answer": "Pele",
+        "alternative": "Pulmões"
+    },
+    {
+        "question": "Qual é o maior planeta do Sistema Solar?",
+        "answer": "Júpiter",
+        "alternative": "Terra"
+    },
+    {
+        "question": "De quem é a famosa frase \"Penso, logo existo\"?",
+        "answer": "Descartes",
+        "alternative": "Sócrates"
+    },
+    {
+        "question": "Qual é menor osso do corpo?",
+        "answer": "Estribo",
+        "alternative": "Martelo"
+    },
+    {
+        "question": "O modo verbal que expressa uma atitude duvidosa, incerta é o:",
+        "answer": "Subjuntivo",
+        "alternative": "Indicativo"
+    }
+]
