@@ -5,7 +5,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- <meta http-equiv="refresh" content="3" /> -->
+        <meta http-equiv="refresh" content="3" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="assets/img/icon.png" />
 
         <!-- Personal CSS -->
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -58,22 +61,49 @@
                 >
                     <li>
                         <a
-                            class="dropdown-item"
-                            data-bs-toggle="offcanvas"
                             href="#offcanvasExample"
-                            role="button"
+                            class="
+                                dropdown-item
+                                d-flex
+                                justify-content-between
+                                align-items-center
+                            "
+                            data-bs-toggle="offcanvas"
                             aria-controls="offcanvasExample"
                         >
-                            Projeto
+                            <span>Perguntas</span>
+                            <i class="fas fa-question fa-sm"></i>
+                        </a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                        <a
+                            href="#"
+                            class="
+                                dropdown-item
+                                d-flex
+                                justify-content-between
+                                align-items-center
+                            "
+                            aria-controls="offcanvasExample"
+                        >
+                            <span>Iniciar</span>
+                            <i class="fas fa-play fa-sm"></i>
                         </a>
                     </li>
                     <li><hr class="dropdown-divider" /></li>
                     <li>
                         <label
                             for="file"
-                            class="dropdown-item d-flex justify-content-between"
+                            class="
+                                dropdown-item
+                                d-flex
+                                justify-content-between
+                                align-items-center
+                            "
                         >
-                            Upload <i class="fas fa-upload ms-2"></i>
+                            <span>Upload</span>
+                            <i class="fas fa-upload ms-2 fa-sm"></i>
                         </label>
                         <input id="file" type="file" class="d-none" />
                     </li>
@@ -81,9 +111,15 @@
                         <a
                             href="#"
                             id="btn-download-file"
-                            class="dropdown-item d-flex justify-content-between"
+                            class="
+                                dropdown-item
+                                d-flex
+                                justify-content-between
+                                align-items-center
+                            "
                         >
-                            Download <i class="fas fa-download ms-2"></i>
+                            <span>Download</span>
+                            <i class="fas fa-download ms-2 fa-sm"></i>
                         </a>
                     </li>
                 </ul>
@@ -98,7 +134,7 @@
             >
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                        Projeto
+                        Perguntas
                     </h5>
                     <button
                         type="button"
@@ -108,9 +144,9 @@
                     ></button>
                 </div>
 
-                <!-- Question Form -->
                 <div class="offcanvas-body">
-                    <form id="question-form" class="mb-5">
+                    <!-- Question Form -->
+                    <form id="question-form" class="mb-4">
                         <div class="mb-3">
                             <label for="question" class="form-label">
                                 Enunciado
@@ -156,123 +192,47 @@
                     </form>
 
                     <!-- Question Board -->
-                    <ol
-                        id="question-board"
-                        class="list-group list-group-numbered"
-                    >
-                        <li
-                            class="
-                                list-group-item
-                                d-flex
-                                justify-content-between
-                                align-items-start
-                            "
-                        >
-                            <div class="ms-2 me-auto">
-                                <div class="fw-bold">Subheading</div>
-                                Content for list item
-                            </div>
-                            <span class="badge bg-primary rounded-pill"
-                                >14</span
-                            >
-                        </li>
-                        <li
-                            class="
-                                list-group-item
-                                d-flex
-                                justify-content-between
-                                align-items-start
-                            "
-                        >
-                            <div class="ms-2 me-auto">
-                                <div class="fw-bold">Subheading</div>
-                                Content for list item
-                            </div>
-                            <span class="badge bg-primary rounded-pill"
-                                >14</span
-                            >
-                        </li>
-                        <li
-                            class="
-                                list-group-item
-                                d-flex
-                                justify-content-between
-                                align-items-start
-                            "
-                        >
-                            <div class="ms-2 me-auto">
-                                <div class="fw-bold">Subheading</div>
-                                Content for list item
-                            </div>
-                            <span class="badge bg-primary rounded-pill"
-                                >14</span
-                            >
-                        </li>
-                        <li
-                            class="
-                                list-group-item
-                                d-flex
-                                justify-content-between
-                                align-items-start
-                            "
-                        >
-                            <div class="ms-2 me-auto">
-                                <div class="fw-bold">Subheading</div>
-                                Content for list item
-                            </div>
-                            <span class="badge bg-primary rounded-pill"
-                                >14</span
-                            >
-                        </li>
-                        <li
-                            class="
-                                list-group-item
-                                d-flex
-                                justify-content-between
-                                align-items-start
-                            "
-                        >
-                            <div class="ms-2 me-auto">
-                                <div class="fw-bold">Subheading</div>
-                                Content for list item
-                            </div>
-                            <span class="badge bg-primary rounded-pill"
-                                >14</span
-                            >
-                        </li>
-                        <li
-                            class="
-                                list-group-item
-                                d-flex
-                                justify-content-between
-                                align-items-start
-                            "
-                        >
-                            <div class="ms-2 me-auto">
-                                <div class="fw-bold">Subheading</div>
-                                Content for list item
-                            </div>
-                            <span class="badge bg-primary rounded-pill"
-                                >14</span
-                            >
-                        </li>
-                        <li
-                            class="
-                                list-group-item
-                                d-flex
-                                justify-content-between
-                                align-items-start
-                            "
-                        >
-                            <div class="ms-2 me-auto">
-                                <div class="fw-bold">Subheading</div>
-                                Content for list item
-                            </div>
-                            <span class="badge bg-primary rounded-pill"
-                                >14</span
-                            >
-                        </li>
-                    </ol>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Perguntas</th>
+                                <th>Pontos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cursor-pointer">
+                                <td>
+                                    O modo verbal que expressa uma atitude
+                                    duvidosa, incerta é o:
+                                </td>
+                                <td class="align-middle text-center">0</td>
+                            </tr>
+
+                            <tr class="cursor-pointer">
+                                <td>
+                                    O modo verbal que expressa uma atitude
+                                    duvidosa, incerta é o:
+                                </td>
+                                <td class="align-middle text-center">0</td>
+                            </tr>
+
+                            <tr class="cursor-pointer">
+                                <td>
+                                    O modo verbal que expressa uma atitude
+                                    duvidosa, incerta é o:
+                                </td>
+                                <td class="align-middle text-center">0</td>
+                            </tr>
+
+                            <tr class="cursor-pointer">
+                                <td>
+                                    O modo verbal que expressa uma atitude
+                                    duvidosa, incerta é o:
+                                </td>
+                                <td class="align-middle text-center">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 

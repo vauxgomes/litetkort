@@ -21,6 +21,10 @@
     background-color: var(--left-color);
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .project {
     overflow: hidden;
     transition: 
