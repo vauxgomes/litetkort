@@ -35,3 +35,22 @@ function InputReader(element, callbackFn) {
         false
     );
 }
+
+function DownloadButton(element, getDataFn) {
+    element.addEventListener("click", (e) => {
+        let data = getDataFn();
+
+        if (!data || data.length === 0) {
+            console.warn("No file was loaded or created");
+            return;
+        }
+
+        let payload = `data:text/json;charset=utf-8, ${encodeURIComponent(
+            JSON.stringify(data)
+        )}`;
+
+        e.target.setAttribute("href", payload);
+        e.target.setAttribute("download", "litetkort-project.json");
+        // e.target.click();
+    });
+}
