@@ -119,8 +119,25 @@
     color: var(--bs-white);
     padding: 1rem;
 
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+
     position: absolute;
     right: 0;
     bottom: 0;
     margin-right: 0.6rem;
+}
+
+.author {
+    position: absolute;
+    bottom: 1rem;
+}
+.author a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #68d388;
+}
+
+.author a:hover {
+    color: var(--bs-dark);
 }
