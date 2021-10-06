@@ -1,5 +1,5 @@
 # Litet Kort
-## <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+### <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
 
 This is a simples sharable flashcard application. It was created for practicing Vanilla JS concepts with my students. It is important to mention that besides Bootstrap 5 CSS this project doesn't make use of any other external library.
 
