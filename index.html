@@ -29,7 +29,8 @@
         <title>Litet Kort</title>
     </head>
     <body class="app">
-        <div class="container" style="position: relative; min-height: 100vh;">
+        <div class="container" style="position: relative; min-height: 100vh">
+            <!-- Navbar -->
             <nav
                 class="
                     d-flex
@@ -79,6 +80,7 @@
                     <li>
                         <a
                             href="#"
+                            id="btn-download-file"
                             class="dropdown-item d-flex justify-content-between"
                         >
                             Download <i class="fas fa-download ms-2"></i>
@@ -87,6 +89,7 @@
                 </ul>
             </nav>
 
+            <!-- OffCanvas -->
             <div
                 class="offcanvas offcanvas-start"
                 tabindex="-1"
@@ -105,8 +108,9 @@
                     ></button>
                 </div>
 
+                <!-- Question Form -->
                 <div class="offcanvas-body">
-                    <form class="mb-5">
+                    <form id="question-form" class="mb-5">
                         <div class="mb-3">
                             <label for="question" class="form-label">
                                 Enunciado
@@ -130,11 +134,16 @@
                             />
                             <input
                                 class="form-control"
-                                id="question"
                                 id="wrong-answer"
                                 name="wrong-answer"
                             />
                         </div>
+
+                        <input
+                            type="hidden"
+                            name="question-id"
+                            id="question-id"
+                        />
 
                         <div class="col-12">
                             <button class="btn btn-dark" type="submit">
@@ -143,7 +152,11 @@
                         </div>
                     </form>
 
-                    <ol class="list-group list-group-numbered">
+                    <!-- Question Board -->
+                    <ol
+                        id="question-board"
+                        class="list-group list-group-numbered"
+                    >
                         <li
                             class="
                                 list-group-item
@@ -269,15 +282,13 @@
                 >
                     <div class="flip-card__inner">
                         <div class="flip-card__front p-2">
-                            <!-- <h3 class="mb-3">
-                            </h3> -->
+                            <h3 class="mb-3"></h3>
                             <h4 class="text-secondary">
                                 Adicione uma ou mais perguntas e exercite sua
                                 memória
                             </h4>
-                            <!-- <button class="btn btn-primary">Iniciar</button> -->
                         </div>
-                        <div class="flip-card__back h4 p-2">Back</div>
+                        <!-- <div class="flip-card__back h4 p-2">Back</div> -->
                     </div>
                 </div>
             </div>
@@ -292,6 +303,7 @@
             crossorigin="anonymous"
         ></script>
 
+        <script src="js/input.js"></script>
         <script src="js/draggable.js"></script>
         <script src="js/app.js"></script>
     </body>

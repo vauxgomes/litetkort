@@ -28,8 +28,14 @@ function Draggable(element, callbackFn) {
             let userX = e.x;
             let halfScreen = window.innerWidth / 2;
 
-            if (!userX) userX = e.touches[0].clientX;
-            if (userX === 0) return;
+            if (!userX) {
+                userX = e.touches ? e.touches[0].clientX : null;
+                return;
+            }
+
+            if (userX === 0) {
+                return;
+            }
 
             if (userX > halfScreen && userX >= startX + length) {
                 // console.log("right: ", userX, window.innerWidth / 2);
@@ -51,11 +57,13 @@ function Draggable(element, callbackFn) {
 
     // Drag end
     ["dragend", "touchend"].forEach((evt) => {
-        target.classList.remove(targetRight);
-        target.classList.remove(targetWrong);
-
         element.addEventListener(evt, (e) => {
             if (callbackFn) callbackFn(status);
+
+            setTimeout(() => {
+                target.classList.remove(targetRight);
+                target.classList.remove(targetWrong);
+            }, 100);
         });
     });
 }
