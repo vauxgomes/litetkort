@@ -135,9 +135,9 @@
 .author a {
     font-weight: bold;
     text-decoration: none;
-    color: #68d388;
+    color: var(--bs-dark);
 }
 
 .author a:hover {
-    color: var(--bs-dark);
+    color: var(--bs-dark);    
 }
