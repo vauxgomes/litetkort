@@ -9,7 +9,7 @@ https://vauxgomes.github.io/litetkort
 
 ## Summary
 - [Functionalities](#functionalities)
-- [Releases](#description)
+- [Releases](#releases)
 
 ## Functionalities
 | Functionality | Description | v0.1 |
